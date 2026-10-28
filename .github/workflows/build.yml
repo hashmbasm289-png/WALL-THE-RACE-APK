@@ -19,7 +19,7 @@ jobs:
         run: |
           mkdir www
           cp index.html www/
-          cp -r libs www/
+      
           npm init -y
           npm i @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6
           npx cap init "Wall Race 3D" com.wallrace.game --web-dir=www
